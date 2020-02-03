@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Mintun eka sivu <3</title>
+    </head>
+    <body style="color:darkred;background-color: burlywood">
+        <a href="index.html">etusivu </a>
+        <p>Mintun eka sivu</p>
+        Tervetuloa Mintun lällärijoogaan!
+        <br>
+        <button
+             id="koiranappi"
+            onclick="
+                getElementById(`koira`).style.display = `none`
+                getElementById(`koiranappi`).textContent =`koira on piilotettu`
+            "
+        >
+            piilota koira
+        </button>
+        <button
+            onclick="
+                getElementById(`roots`).style.display = `none`
+            "
+        > 
+            piilota Roots
+        </button>  
+       <p> <button
+            onclick="
+                getElementById(`koira`).style.display = ``
+            "
+        >
+            palauta koira
+        </button>
+    </button>  
+    <button
+         onclick="
+             getElementById(`roots`).style.display = ``
+         "
+     >
+         palauta roots
+     </button></p> 
+   
+
+        <style>
+            img {height: 200px; width: 400px;}
+            div {border-width: 2px; border-color: darkred;border-style:solid}
+            div {display:inline-block}
+            img {margin: 10px}
+            p   {text-align: center}
+
+        </style>
+
+        <div><img 
+            id="koira"
+            src= "nimeton.png" 
+            alt="alaspäin katsova koira" 
+        />
+        <img
+             id="roots"
+             src= "https://www.fit.fi/wp-content/blogs.dir/26/files/sites/26/2018/10/re-fit-jooga-alaspain-katsova-koira-1024x576.jpg"
+             alt="Rootsin alaspäin katsova koira ja samettihousut"
+        />   
+        <p>Alaspäin katsovan koiran ohjeet</p></div>
+    </body>
+</html>
