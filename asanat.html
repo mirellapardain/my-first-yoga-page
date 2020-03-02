@@ -12,8 +12,19 @@
         <button
              id="koiranappi"
             onclick="
-                getElementById(`koira`).style.display = `none`
-                getElementById(`koiranappi`).textContent =`koira on piilotettu`
+		let nimi=prompt('mikä sinun nimi on')
+		let kuva_näkyvissä = getElementById(`koira`).style.display == ``
+		if(kuva_näkyvissä)
+		{
+                	getElementById(`koira`).style.display = `none` //piilottaa kuvan 
+			getElementById(`koiranappi`).textContent =`koira on piilotettu `+nimi 
+		}
+		else	
+                {	                                                           
+			getElementById(`koira`).style.display = `` //palauttaa kuvan näkyviin	
+			getElementById(`koiranappi`).textContent =`piilota koira `+nimi
+		}
+		
             "
         >
             piilota koira
@@ -25,13 +36,7 @@
         > 
             piilota Roots
         </button>  
-       <p> <button
-            onclick="
-                getElementById(`koira`).style.display = ``
-            "
-        >
-            palauta koira
-        </button>
+       <p> 
     </button>  
     <button
          onclick="
